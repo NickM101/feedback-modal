@@ -1,44 +1,15 @@
 @import "tailwindcss";
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+@theme {
+  --color-perfume-50: #f5f5fd;
+  --color-perfume-100: #eeedfa;
+  --color-perfume-200: #dfddf7;
+  --color-perfume-300: #c5bef0;
+  --color-perfume-400: #ab9ee7;
+  --color-perfume-500: #8e76dc;
+  --color-perfume-600: #7c58cf;
+  --color-perfume-700: #6c46bb;
+  --color-perfume-800: #5a3a9d;
+  --color-perfume-900: #4b3181;
+  --color-perfume-950: #2e1e57;
 }
