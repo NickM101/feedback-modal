@@ -11,7 +11,7 @@ const FeedbackModal: React.FC<FeedbackModalProps> = ({
   onClose,
   onSubmit,
 }) => {
-  const ratings = [1, 2, 3, 4, 5, 6, 7, 8, 8, 9];
+  const ratings = [...Array(10)];
   const [rating, setRating] = useState<number | null>(null);
 
   useEffect(() => {
@@ -65,7 +65,7 @@ const FeedbackModal: React.FC<FeedbackModalProps> = ({
           know?
         </h2>
         <div className="grid grid-cols-5 sm:grid-cols-10 gap-2 mb-4 text-center">
-          {[...Array(10)].map((_, index) => (
+          {ratings.map((_, index) => (
             <button
               key={index + 1}
               onClick={() => handleRatingSelect(index + 1)}
